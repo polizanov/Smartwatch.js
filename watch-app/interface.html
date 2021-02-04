@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="watch.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <title>Smart Watch</title>
+</head>
+
+<body>
+    <header>
+        <article><a href="https://github.com/polizanov">The Creator's GitHub</a></article>
+        <img width="40" height="40" src="flowcode.png" alt="GitHub: polizanov">
+        
+    </header>
+    <main>
+        <div id="timer-wrapper">
+            <article>
+                <div id="input" style="display: block">
+                    <p>Timer</p>
+                    <input type="text" , placeholder="Hours"><br>
+                    <input type="text" , placeholder="Minutes"><br>
+                    <input type="text" , placeholder="Seconds"><br>
+                    <button>Start</button>
+                </div>
+                <div id="counting" style="display: none">
+                    <p>Timer</p>
+                    <p>HOURS | MINUTES | SECONDS</p>
+                    <span>00:00:00</span><br>
+                    <button>Stop</button>
+                    <button>Reset</button>
+                </div>
+            </article>
+        </div>
+        <div id="wrapper">
+            <article id="watch">
+                <p>HOURS | MINUTES | SECONDS</p>
+                <h2>00:00</h2>
+                <p>DAY | MONTH | YEAR</p>
+                <h4>21.01.2020</h4>
+            </article>
+            <article id="menu">
+                <button id="timer" onclick="timer()">Timer</button>
+                <button id="stopwatch" onclick="stopWatch()">Stopwatch</button>
+            </article>
+        </div>
+        <div id="stopWatch-wrapper">
+            <article>
+                <p>Stopwatch</p>
+                <p>HOURS | MINUTES | SECONDS</p>
+                <span>00:00:00</span><br>
+                <div>
+
+                </div>
+                <button>Start</button>
+                <button>Lap</button>
+                <button>Stop</button>
+                <button>Reset</button>
+            </article>
+        </div>
+    </main>
+    <div class="outer">
+        <footer>
+            <p>&#169 Darin Polizanov</p>
+        </footer>
+    </div>
+    <script src="./watchApp.js"></script>
+    <script src="elemets.js"></script>
+    <script>
+        window.onload = getDataAndTime();
+    </script>
+</body>
+
+</html>
